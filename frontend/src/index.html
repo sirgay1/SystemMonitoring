@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 System Monitor</h1>
+        <div class="stats-grid">
+            <div class="card">
+                <h2>CPU Usage</h2>
+                <canvas id="cpuChart" width="400" height="200"></canvas>
+                <div class="value" id="cpuValue">0%</div>
+            </div>
+            <div class="card">
+                <h2>Memory Usage</h2>
+                <div class="memory-bar">
+                    <div id="memFill" class="memory-fill"></div>
+                </div>
+                <div class="value" id="memValue">0%</div>
+                <div id="memDetails"></div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Processes</h2>
+            <div class="table-wrapper">
+                <table id="processTable">
+                    <thead>
+                        <tr><th>PID</th><th>Command</th><th>CPU%</th><th>MEM%</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
