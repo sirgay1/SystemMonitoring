@@ -39,11 +39,11 @@ make
 ./sysmon
 ```
 
-## В терминале появится сообщение:
+### В терминале появится сообщение:
 
 ```bash
 Starting web server on http://localhost:8080
 Server listening on http://localhost:8080
 ```
 
-## Перейти по этой ссылке
+### Перейти по этой ссылке
